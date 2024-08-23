@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Main</title>
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .div_introduce {
+            text-align: center;
+        }
+
+        .card_container {
+            display:grid; 
+            grid-template-columns: 1fr 1fr 1fr; /* repeat(3,1fr) */
+        }
+        .card_div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card_img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <body>
+        <h1>Tennis market</h1>
+        <div class="div_introduce">
+            Welcome to Tennis market! <br>
+            Enjoy your shopping.
+            <br>
+            <br>
+            <a href="./orderlist"> order list </a>
+        </div>
+        <div class = "card_container">
+            <div class = "card_div">
+                <img class = "card_img" src = "./img/redRacket.png">
+                <p class = "card_title">Red Racket</p>
+                <input class = "card_button" type="button" value = "order" onclick="location.href='/order?productId=1'">
+            </div>
+            <div class = "card_div">
+                <img class = "card_img" src = "./img/blueRacket.png">
+                <p class = "card_title">Blue Racket</p>
+                <input class = "card_button" type="button" value = "order" onclick="location.href='/order?productId=2'">
+            </div>
+            <div class = "card_div">
+                <img class = "card_img" src = "./img/blackRacket.png">
+                <p class = "card_title">Black Racket</p>
+                <input class = "card_button" type="button" value = "order" onclick="location.href='/order?productId=3'">
+            </div>
+        </div>
+    </body>
+</html>
